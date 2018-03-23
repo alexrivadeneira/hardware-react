@@ -3,6 +3,8 @@
 
 import React, {Component} from 'react';
 import AdminView from './AdminView'
+import ShopView from './ShopView'
+
 import ProductForm from './ProductForm';
 class HomePage extends Component {
 
@@ -75,6 +77,12 @@ class HomePage extends Component {
 		    deleteProduct={this.deleteProduct}
 		    />        
 		  </div>
+
+		  <hr />
+
+		  <ShopView 
+		   productList={this.state.productList} 
+			/>
       </div>
     );
   }
